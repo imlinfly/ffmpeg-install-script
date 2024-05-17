@@ -24,8 +24,10 @@ fi
 cd ffmpeg-4.4.1
 ./configure --prefix=/usr/local/ffmpeg
 make && make install
-echo "export PATH=\$PATH:/usr/local/ffmpeg/bin" >> /etc/profile
-source /etc/profile
+#echo "export PATH=\$PATH:/usr/local/ffmpeg/bin" >> /etc/profile
+#source /etc/profile
+
+ln -s /usr/local/ffmpeg/bin/ffmpeg /usr/bin/ffmpeg
 
 rm -rf ffmpeg-4.4.1
 echo "FFmpeg installed successfully."
