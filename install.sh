@@ -1,4 +1,3 @@
-# 判断是否安装了 FFmpeg
 if command -v ffmpeg &> /dev/null
 then
     echo "FFmpeg has been installed."
